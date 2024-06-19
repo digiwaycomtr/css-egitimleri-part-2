@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+</head>
+<style>
+    a{
+        border: 3px solid #000;
+        padding: 5px 8px;
+        text-decoration: none;
+        display: inline-block;
+        width: 80px;
+        text-align: center;
+        color: #000;
+    }
+
+    a:link{
+        border-color: green;
+        color: green;
+    }
+
+    a:visited{
+        border-color: blue;
+        color: blue; 
+    }
+
+    a:hover{
+      background-color: coral;
+      color: #000;  
+    }
+
+    a:active{
+      background-color: yellow;
+      color: blueviolet;  
+    }
+
+    div:hover p{
+        display: block;
+        background-color: red;
+    }
+
+    p{
+        display: none;
+    }
+</style>
+<body>
+    
+    <div>
+        <a href="border.html">Anasayfa</a>
+        <a href="display.html">Hizmetler</a>
+        <a href="styling-links.html">İletişim</a>
+    </div>
+
+    <br><br>
+
+    <div>
+        Tıkla
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati corrupti minus, quod vitae veritatis sint neque ex beatae aliquam totam. Tempore, asperiores iste. Consequatur perferendis est dolor dicta voluptatem pariatur.
+        </p>
+    </div>
+
+
+
+</body>
+</html>
