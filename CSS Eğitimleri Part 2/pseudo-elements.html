@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+</head>
+<style>
+    p::first-line{
+        font-weight: bold;
+        color: crimson;
+        word-spacing: 3px;
+        letter-spacing: 1px;
+    }
+
+    p.p1::first-letter{
+      font-size: 40px;  
+    }
+
+    p.p1::selection{
+        background-color: hotpink;
+    }
+
+    p::after{
+       content: '\1F601';
+       color: blue; 
+       font-size: 50px;
+      
+    }
+
+</style>
+<body>
+    
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, necessitatibus veritatis maiores perferendis fuga veniam exercitationem iste aut ut atque. Nihil obcaecati architecto laboriosam consequatur pariatur facilis suscipit, necessitatibus facere!</p>
+
+   <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, necessitatibus veritatis maiores perferendis fuga veniam exercitationem iste aut ut atque. Nihil obcaecati architecto laboriosam consequatur pariatur facilis suscipit, necessitatibus facere!</p>
+
+
+
+</body>
+</html>
